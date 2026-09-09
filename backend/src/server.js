@@ -17,7 +17,7 @@ const __dirname = path.resolve();
 
 app.use(
   cors({
-    origin: "https://callix-rosy.vercel.app",
+    origin: process.env.FRONTEND_URL,
     credentials: true 
   })
 );
