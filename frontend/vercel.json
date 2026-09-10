@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "/"
+      "source": "/api/:path*",
+      "destination": "https://callix-backend-ux9x.onrender.com/api/:path*"
     }
   ]
 }
