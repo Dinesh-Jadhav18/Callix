@@ -92,12 +92,12 @@ export async function login(req, res) {
       expiresIn: "7d"
     });
 
-    res.cookie("jwt", token, {
-      maxAge: 7 * 24 * 60 * 60 * 1000,
-      httpOnly: true, 
-      sameSite: "none", 
-      secure: true
-    });
+res.cookie("jwt", token, {
+  maxAge: 7 * 24 * 60 * 60 * 1000,
+  httpOnly: true,
+  sameSite: "none",
+  secure: true
+});
 
     res.status(200).json({ success: true, user });
   } catch (error) {
