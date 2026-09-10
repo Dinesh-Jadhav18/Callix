@@ -22,6 +22,10 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.send("Codo-File Backend is Running");
+});
+
 app.use(express.json());
 app.use(cookieParser());
 
